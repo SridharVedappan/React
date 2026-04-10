@@ -1,0 +1,44 @@
+* {
+  background: #f2f2f2;
+}
+.profile-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2.9px solid #0080ff;
+  margin-bottom: 20px;
+}
+
+.upload-btn {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  background: #00aaff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  background: #50c5ff;
+}
