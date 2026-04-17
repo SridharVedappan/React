@@ -1,0 +1,31 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.card {
+  width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.address {
+  margin-top: 10px;
+}
