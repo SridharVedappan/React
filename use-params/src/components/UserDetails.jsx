@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 export default function UserDetails() {
   const { id } = useParams();
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState("");
 
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
