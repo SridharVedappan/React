@@ -1,0 +1,69 @@
+* {
+  font-family: sans-serif;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.chat-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.messages {
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid #257fd3;
+  outline: none;
+}
+
+input {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input-area button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background: #257fd3;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+h2 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: #007cf0;
+  font-size: 35px;
+}
+
+.message {
+  background: #ffffff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  max-width: 40%;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
