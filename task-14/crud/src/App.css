@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  flex: 1;
+  padding: 8px;
+}
+
+.form button {
+  padding: 8px 15px;
+  background: #257fd3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #1a5fa3;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #257fd3;
+  color: white;
+}
+
+.edit {
+  background: rgb(211, 211, 211);
+  border: none;
+  padding: 10px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  background: rgb(44, 146, 255);
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+}
