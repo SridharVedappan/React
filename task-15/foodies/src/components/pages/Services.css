@@ -1,0 +1,82 @@
+.services-page {
+  padding: 80px;
+  background: #fffaf2;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TITLE */
+.services-title {
+  font-size: 36px;
+  color: #ff5722;
+  margin-bottom: 10px;
+  animation: fadeDown 0.8s ease;
+}
+
+.services-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 16px;
+  animation: fadeDown 1s ease;
+}
+
+/* GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.food-icon {
+  margin-left: 10px; /* 👈 space between icons */
+  color: #ff5722;
+  font-size: 18px;
+}
+/* CARD */
+.service-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+/* SHOW ON SCROLL */
+.service-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HOVER */
+.service-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  background: #ff5722;
+  color: #fff;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* TEXT INSIDE CARD */
+.service-card p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+.service-card:hover p {
+  color: #fff;
+}
+
+/* ANIMATIONS */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

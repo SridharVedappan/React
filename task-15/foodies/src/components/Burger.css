@@ -1,0 +1,98 @@
+.burger-popular {
+  padding: 100px;
+  background: #fff8dd;
+  min-height: 100vh;
+}
+
+.burger-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.burger-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.burger-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  position: relative;
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+  margin-bottom: 60px;
+}
+
+.burger-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.burger-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.burger-image-box {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.burger-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.burger-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.card-body h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.burger-price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffb300;
+  margin-bottom: 10px;
+}
+
+.burger-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffb300, #ff8400);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.burger-btn:hover {
+  background: linear-gradient(135deg, #ff8400, #ffb300);
+  transform: scale(1.05);
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  padding: 40px;
+}

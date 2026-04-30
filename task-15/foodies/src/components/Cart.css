@@ -1,0 +1,157 @@
+.cart-page {
+  padding: 40px;
+  background: #f8f8f8;
+  min-height: 100vh;
+}
+
+.cart-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cart-card img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.remove-btn {
+  border: none;
+  background: #ff5722;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  height: fit-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.order-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background: #e64a19;
+}
+
+.order-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+}
+
+.order-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  animation: popIn 0.5s ease;
+}
+
+.tick-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.tick {
+  width: 90px;
+  height: 90px;
+  overflow: visible;
+}
+
+.tick-circle {
+  fill: none;
+  stroke: #22c55e;
+  stroke-width: 4;
+  stroke-linecap: round;
+
+  stroke-dasharray: 163.36;
+  stroke-dashoffset: 163.36;
+
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+
+  animation: drawCircle 0.8s ease forwards;
+}
+
+.tick-check {
+  fill: none;
+  stroke: #22c55e;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+
+  animation: drawCheck 0.4s ease forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCheck {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

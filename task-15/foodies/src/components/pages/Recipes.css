@@ -1,0 +1,85 @@
+.recipes-page {
+  padding: 80px;
+  background: #fffaf2;
+  font-family: "Poppins", sans-serif;
+}
+
+.recipes-title {
+  font-size: 36px;
+  color: #ff5722;
+  margin-bottom: 10px;
+
+  animation: fadeDown 0.8s ease-out;
+}
+
+.recipes-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 16px;
+
+  animation: fadeDown 1s ease-out;
+}
+
+.recipe-section {
+  margin-bottom: 60px;
+}
+
+.recipe-section h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #222;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.recipe-card {
+  background: #fff;
+  padding: 12px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.recipe-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.recipe-card:hover {
+  transform: translateY(-6px);
+  background: #ff5722;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
